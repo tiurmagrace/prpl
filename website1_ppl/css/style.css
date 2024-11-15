@@ -145,109 +145,115 @@ header nav a:hover {
     color: #666;
 }
 
-/* Information and Order Pages Styles */
-.page-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-}
-
-.page-container h1 {
-    font-size: 2rem;
-    color: #664229;
-    margin-bottom: 1rem;
-}
-
-.page-container p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 1.5rem;
-    line-height: 1.8;
-}
-
-.page-container ol,
-.page-container ul {
-    margin-left: 20px;
-    padding-left: 20px;
-}
-
-.page-container li {
-    margin-bottom: 10px;
-}
-
 /* Footer Styles */
 footer {
-    background: #1c1c1c;
+    background: #664229;
     color: #fff;
     padding: 2rem 1rem;
-    text-align: left;
+    text-align: center;
 }
 
 .footer-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .footer-section {
-    flex: 1;
-    min-width: 200px;
-    margin-bottom: 1rem;
+    max-width: 250px;
+    margin: 1rem;
+    text-align: left;
 }
 
 .footer-section h3 {
-    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.footer-section h3::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #fff;
+    margin-top: 0.5rem;
+}
+
+.footer-section p {
     margin-bottom: 1rem;
-    border-bottom: 2px solid #444;
-    padding-bottom: 0.5rem;
-}
-
-.footer-section p,
-.footer-section ul {
-    font-size: 0.9rem;
-    color: #ccc;
 }
 
 .footer-section ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
 .footer-section ul li {
-    margin-bottom: 0.5rem;
-}
-
-.footer-section ul li a {
-    color: #ccc;
-    text-decoration: none;
-    transition: color 0.2s;
-}
-
-.footer-section ul li a:hover {
-    color: #fff;
+    margin: 5px 0;
 }
 
 .social-icons {
     display: flex;
+    justify-content: center;
     gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 0.8rem; /* Sesuaikan ukuran ikon agar lebih kecil */
+    margin: 0 8px; /* Beri jarak antar ikon */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease;
 }
 
 .social-icons img {
-    width: 24px;
-    height: 24px;
+    width: 24px; /* Sesuaikan dengan ukuran yang diinginkan */
+    height: 24px; /* Sesuaikan dengan ukuran yang diinginkan */
 }
+
+.social-icons a:hover {
+    color: #ccc; /* Ubah warna saat hover jika ingin */
+}
+
+/* style.css */ /*how-to-order-page*/ 
+
+order.how-to-order-page h1 {
+    font-size: 2.5rem;
+    color: #664229;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.how-to-order-page p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.how-to-order-page ol {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 1.1rem;
+    color: #555;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 
 .footer-bottom {
     text-align: center;
-    padding-top: 1rem;
-    border-top: 1px solid #444;
-    font-size: 0.8rem;
-    color: #888;
+    margin-top: 2rem;
+    font-size: 0.9rem;
 }
 
-/* Responsive Styles */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
     .features {
         flex-direction: column;
